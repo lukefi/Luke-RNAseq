@@ -3,3 +3,5 @@ Nextflow based RNA-Seq pipeline used for transcriptome analysis of different ani
 
 
 _Also miseq data_
+
+webpage will be implemented later on... 
