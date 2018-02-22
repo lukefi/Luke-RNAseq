@@ -1,0 +1,13 @@
+not really script but preliminary pipeline for analysing miseq data - Illumina-sequenced PE
+
+0. Rename files (sometimes they are quite long)
+
+1. combine forward and reverse files
+cat *_R1.fastq.gz > forward.fastq.gz 
+cat *_R2.fastq.gz > reverse.fastq.gz
+
+2. import multplexed sequences 
+qiime tools import \
+  --type MultiplexedPairedEndBarcodeInSequence \
+  --input-path dir/name/here/ \
+  --output-path multiplexed-seqs.qza
